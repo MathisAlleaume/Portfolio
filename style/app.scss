@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+
+$backgound: #312e2e;
+
+body {
+  background: $backgound;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0²;
+}
+#hero {
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 3% 25% 45% 27%;
+  grid-template-rows: 40px 270px 270px 500px;
+  .logo {
+    font-family: "Pacifico";
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 15pt;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .links {
+    float: right;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .topLink {
+    text-decoration: none;
+    color: white;
+    font-size: 10pt;
+    margin-left: 15px;
+  }
+  .moreBtn {
+    color: white;
+    border-radius: 25px;
+    width: 230px;
+    height: 40px;
+    border: none;
+    text-decoration: none;
+  }
+
+  #more {
+    color: $backgound;
+  }
+
+  .intro {
+      display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-around;
+    align-content: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #mathis {
+    font-weight: 600;
+  }
+}

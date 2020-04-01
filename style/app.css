@@ -1,1 +1,83 @@
-/* No CSS *//*# sourceMappingURL=app.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+body {
+  background: #312e2e;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0²;
+}
+
+#hero {
+  height: 100vh;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3% 25% 45% 27%;
+      grid-template-columns: 3% 25% 45% 27%;
+  -ms-grid-rows: 40px 270px 270px 500px;
+      grid-template-rows: 40px 270px 270px 500px;
+}
+
+#hero .logo {
+  font-family: "Pacifico";
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 15pt;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#hero .links {
+  float: right;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#hero .topLink {
+  text-decoration: none;
+  color: white;
+  font-size: 10pt;
+  margin-left: 15px;
+}
+
+#hero .moreBtn {
+  color: white;
+  border-radius: 25px;
+  width: 230px;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+}
+
+#hero #more {
+  color: #312e2e;
+}
+
+#hero .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#hero #mathis {
+  font-weight: 600;
+}
+/*# sourceMappingURL=app.css.map */
