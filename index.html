@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style/app.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style/app.css" />
+  <script src="/script/jquery-3.5.0.min.js"></script>
+</head>
+
+<body>
+  <div class="nav" id="topNav">
+    <div class="logo">MA</div>
+    <div class="links">
+      <a href="#about" class="topLink js-scroll-trigger">A PROPOS</a>
+      <a href="#diplomas  " class="topLink">DIPLOMES</a>
+      <a href="#" class="topLink">EXPERIENCES</a>
+      <a href="#" class="topLink">COMPETENCES</a>
+      <a href="#" class="topLink">CONTACT</a>
+    </div>
+  </div>
+
+  <div class="sections">
     <section id="hero">
-      <div class="logo">MA</div>
-      <div class="links">
-        <a href="#" class="topLink">A PROPOS</a>
-        <a href="#" class="topLink">DIPLOMES</a>
-        <a href="#" class="topLink">EXPERIENCES</a>
-        <a href="#" class="topLink">COMPETENCES</a>
-        <a href="#" class="topLink">CONTACT</a>
-      </div>
+
       <div class="intro">
-        <div id="mathis">MATHIS ALLEAUME</div>
-        <h3>Developpeur web & mobile</h2>
-        <button class="moreBtn"><p id="more">voir plus</p></button>
+        <div class="mathis">MATHIS ALLEAUME</div>
+        <div id="dev">Developpeur web & mobile</div>
+        <button id="moreBtn" class="hoverBtn js-scroll-trigger" onclick="window.location.href='#about'">
+          <p id="more">Voir Plus</p>
+        </button>
       </div>
     </section>
 
-    <script src="/script/app.js" async defer></script>
-  </body>
+    <section id="about">
+      <div class="aboutTitle">
+        À PROPOS
+      </div>
+      <div class="aboutText">
+        Je suis un développeur Web et Mobile basé sur Nantes.
+        <br>
+        <br>
+        En constante auto-formation, apprendre de nouvelles technologies et de nouvelles façons de travailler fait
+        partie
+        intégrante de mon éthique profesionnelle.
+        <br>
+        <br>
+        Également passioné de musique, je sais faire preuve de créativité et d'innovation.
+
+      </div>
+
+      <div class="aboutImg"></div>
+
+      <div class="blackStripeL"></div>
+      <div class="blackStripeR"></div>
+
+    </section>
+
+    <section id="diplomas">
+      <div class="diplomaTitle">DIPLÔMES
+      </div>
+
+      <div class="diploma1">
+        <div class="lieu">LYCÉE DU PAYS DE RETZ</div>
+        <div class="date">2017 - Pornic 44210</div>
+        <hr>
+        <div class="diplomaName">BACCALAURÉAT SCIENTIFIQUE</div>
+        
+      </div>
+
+      <div class="diploma2">
+        <div class="lieu">LYCÉE POLYVALENT CHEVROLLIER</div>
+        <div class="date">2019 - Angers 49000</div>
+        <hr>
+        <div class="diplomaName">BTS SERVICE INFORMATIQUE AUX ORGANISATIONS OPTION SOLUTION LOGICIELLE ET APPLICATIONS MÉTIER</div>
+      </div>
+
+      <div class="diplomaImg"></div>
+
+      <div class="whiteStripeL"></div>
+      <div class="whiteStripeR"></div>
+
+    </section>
+
+    <section id="skills">
+
+    </section>
+  </div>
+  <script src="/script/app.js" async defer></script>
+</body>
+
 </html>

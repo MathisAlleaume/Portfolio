@@ -1,68 +1,289 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
 
-$backgound: #312e2e;
+$nav: #312e2e;
 
 body {
-  background: $backgound;
+
   font-family: "Montserrat";
   margin: 0;
-  padding: 0²;
+  padding: 0;
 }
-#hero {
-  height: 100vh;
-  color: white;
-  display: grid;
-  grid-template-columns: 3% 25% 45% 27%;
-  grid-template-rows: 40px 270px 270px 500px;
+
+.sections {
+  // overflow: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.nav {
+  background: $nav;
+  min-width: 100vw;
+  display: inline-grid;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+
   .logo {
+    cursor: pointer;
+    color: white;
     font-family: "Pacifico";
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
     font-size: 15pt;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 15px;
   }
 
   .links {
     float: right;
     grid-column-start: 4;
     grid-column-end: 5;
-    margin-top: 5px;
-    margin-right: 5px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+.topLink {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 10pt;
+  margin-left: 15px;
+}
+
+.whiteNav {
+
+  background: #F3F3F3;
+
+  .logo {
+    color: $nav;
   }
 
   .topLink {
-    text-decoration: none;
-    color: white;
-    font-size: 10pt;
-    margin-left: 15px;
+    color: $nav;
   }
-  .moreBtn {
-    color: white;
-    border-radius: 25px;
-    width: 230px;
-    height: 40px;
-    border: none;
-    text-decoration: none;
-  }
+}
 
-  #more {
-    color: $backgound;
-  }
 
-  .intro {
-      display: flex;
-    justify-self: center;
-    align-self: center;
-    justify-content: space-around;
-    align-content: center;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+// Section hero
+#hero {
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 3% 25% 45% 27%;
+  grid-template-rows: 4% 30% 30% auto;
+  scroll-snap-align: start;
+}
+
+#moreBtn {
+  background-color: white;
+  border-radius: 25px;
+  width: 230px;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+  justify-self: center;
+  display: inlie-grid;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $nav;
+    transition: ease-in-out .2s;
+
+    #more {
+      color: white;
+      transition: ease-in .2s;
+    }
   }
-  #mathis {
+}
+
+#more {
+  color: $nav;
+  align-self: center;
+}
+
+.intro {
+  background: white;
+  background: url(/imgs/hero.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+
+  .mathis {
     font-weight: 600;
+    font-size: 80pt;
+    justify-self: center;
   }
+
+  #dev {
+    font-size: 35pt;
+    justify-self: center;
+    margin-bottom: 15px;
+  }
+}
+
+
+// section about
+
+#about {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5% 35% 10% 35% 10% 5%;
+  grid-template-rows: 15% 5% 45% 15% 12% auto;
+  background: #F3F3F3;
+  scroll-snap-align: start;
+}
+
+.aboutImg {
+  background: url(/imgs/about.jpg);
+  // background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.blackStripeL {
+  background: $nav;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.blackStripeR {
+  background: $nav;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.aboutTitle {
+  font-size: 35pt;
+  font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.aboutText {
+  margin-top: 45px;
+  font-size: 17pt;
+  font-weight: 600;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+// section diploma
+
+#diplomas {
+  color: white;
+  height: 100vh;
+  background: $nav;
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: 5% 5% 30% 10% 45% 5%;
+  grid-template-rows: 15% 5% 25% 38% 12% 5%;
+
+}
+
+.diplomaTitle {
+  font-size: 35pt;
+  font-weight: bold;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.diploma1 {
+  margin-top: 45px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.diploma2 {
+  margin-top: 45px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.lieu{
+  font-size: 20pt;
+  display: inline;
+}
+
+.diplomaName{
+  font-size: 25pt;
+}
+
+.date{
+  font-size: 15pt;
+  float: right;
+}
+
+.diplomaImg{
+  background: url(/imgs/diplomas.jpg);
+  // background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.whiteStripeL {
+  background: #F3F3F3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.whiteStripeR {
+  background: #F3F3F3;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+
+// section skills
+
+#skills {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5% 35% 10% 35% 10% 5%;
+  grid-template-rows: 15% 5% 45% 15% 12% auto;
 }
