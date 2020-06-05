@@ -95,6 +95,15 @@ body {
   display: inlie-grid;
   cursor: pointer;
   outline:none;
+  &:hover {
+    background-color: $nav;
+    transition: ease-in-out .2s;
+
+    #more {
+      color: white;
+      transition: ease-in .2s;
+    }
+  }
 }
 
 #more {
