@@ -3,7 +3,7 @@
 
 $nav: #312e2e;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -94,16 +94,7 @@ body {
   justify-self: center;
   display: inlie-grid;
   cursor: pointer;
-
-  &:hover {
-    background-color: $nav;
-    transition: ease-in-out .2s;
-
-    #more {
-      color: white;
-      transition: ease-in .2s;
-    }
-  }
+  outline:none;
 }
 
 #more {
@@ -150,10 +141,29 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 5% 35% 10% 35% 10% 5%;
-  grid-template-rows: 15% 5% 45% 15% 12% auto;
+  grid-template-rows: 15% 5% 30% 30% 15% 12%;
   background: #F3F3F3;
   scroll-snap-align: start;
 }
+
+// .aboutCards {
+//   display: flex;
+//   flex: 0 50%;
+//   align-content: center;
+//   grid-column-start: 2;
+//   grid-column-end: 3;
+//   grid-row-start: 4;
+//   grid-row-end: 5;
+//   justify-content: space-between;
+//   // padding: 20px;
+// }
+
+// .aboutCard {
+//   background-color: lightgray;
+//   width: 100%;
+//   height: auto;
+//   margin: 20px;
+// }
 
 .aboutImg {
   background: url(/imgs/about.jpg);
@@ -202,6 +212,36 @@ body {
   grid-row-end: 4;
 }
 
+#aboutBtn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: $nav;
+  border-radius: 25px;
+  width: 230px;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+  justify-self: left;
+  display: inlie-grid;
+  cursor: pointer;
+  outline:none;
+  &:hover {
+    background-color: $nav;
+    transition: ease-in-out .2s;
+
+    #contactTxt {
+      color: #f3f3f3;
+      transition: ease-in .2s;
+    }
+  }
+}
+
+#contactTxt{
+  color: #FFF;
+}
+
 // section diploma
 
 #diplomas {
@@ -240,21 +280,21 @@ body {
   grid-row-end: 5;
 }
 
-.lieu{
+.lieu {
   font-size: 20pt;
   display: inline;
 }
 
-.diplomaName{
+.diplomaName {
   font-size: 25pt;
 }
 
-.date{
+.date {
   font-size: 15pt;
   float: right;
 }
 
-.diplomaImg{
+.diplomaImg {
   background: url(/imgs/diplomas.jpg);
   // background-attachment: fixed;
   background-position: top;
@@ -288,6 +328,7 @@ body {
 #skills {
   height: 100vh;
   display: grid;
+  background: #F3F3F3;
   grid-template-columns: 5% 35% 10% 35% 10% 5%;
   grid-template-rows: 15% 5% 45% 15% 12% auto;
 }
