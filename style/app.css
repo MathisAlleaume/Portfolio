@@ -363,10 +363,13 @@ body {
 
 #experiences {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   background: #f3f3f3;
+  -ms-grid-columns: 5% 50% 2% 35% 1% auto;
+      grid-template-columns: 5% 50% 2% 35% 1% auto;
+  -ms-grid-rows: 15% 5% 45% 15% 15% auto;
+      grid-template-rows: 15% 5% 45% 15% 15% auto;
 }
 
 #experiences * {
@@ -374,8 +377,47 @@ body {
           box-sizing: border-box;
 }
 
-#experiencesTitle {
+.experiencesTitle {
   font-size: 35pt;
   font-weight: bold;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.expImg {
+  background: url(/imgs/exp.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.blackStripeLExp {
+  background: #312e2e;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.blackStripeRExp {
+  background: #312e2e;
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 7;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
 }
 /*# sourceMappingURL=app.css.map */
