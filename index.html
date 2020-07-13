@@ -1,104 +1,153 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mathis ALLEAUME</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style/slider.css" />
+    <link rel="stylesheet" href="/style/app.css" />
+    <script src="/script/jquery-3.5.0.min.js"></script>
+    <script src="/script/swiper.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title></title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/style/app.css" />
-  <script src="/script/jquery-3.5.0.min.js"></script>
-</head>
-
-<body>
-  <div class="nav" id="topNav">
-    <div class="logo" onclick="location.href='#hero'">MA</div>
-    <div class="links">
-      <a href="#about" class="topLink js-scroll-trigger">A PROPOS</a>
-      <a href="#diplomas  " class="topLink">DIPLOMES</a>
-      <a href="#skills" class="topLink">EXPERIENCES</a>
-      <a href="#" class="topLink">COMPETENCES</a>
-      <a href="#" class="topLink">CONTACT</a>
+  <body>
+    <div class="nav" id="topNav">
+      <div class="logo" onclick="location.href='#hero'">MA</div>
+      <div class="links">
+        <a href="#about" class="topLink js-scroll-trigger">A PROPOS</a>
+        <a href="#diplomas  " class="topLink">DIPLOMES</a>
+        <a href="#experiences" class="topLink">EXPERIENCES</a>
+        <a href="#" class="topLink">COMPETENCES</a>
+        <a href="#" class="topLink">CONTACT</a>
+      </div>
     </div>
-  </div>
 
-  <div class="sections">
-    <section id="hero">
+    <div class="sections">
+      <section id="hero">
+        <div class="intro">
+          <div class="mathis">MATHIS ALLEAUME</div>
+          <div id="dev">Developpeur web & mobile</div>
+          <button
+            id="moreBtn"
+            class="hoverBtn js-scroll-trigger"
+            onclick="window.location.href='#about'"
+          >
+            <p id="more">Voir Plus</p>
+          </button>
+        </div>
+      </section>
 
-      <div class="intro">
-        <div class="mathis">MATHIS ALLEAUME</div>
-        <div id="dev">Developpeur web & mobile</div>
-        <button id="moreBtn" class="hoverBtn js-scroll-trigger" onclick="window.location.href='#about'">
-          <p id="more">Voir Plus</p>
+      <section id="about">
+        <div class="aboutTitle">
+          À PROPOS
+        </div>
+        <div class="aboutText">
+          Je suis un développeur Web et Mobile basé sur Nantes.
+          <br />
+          <br />
+          En constante auto-formation, apprendre de nouvelles technologies et de
+          nouvelles façons de travailler fait partie intégrante de mon éthique
+          profesionnelle.
+          <br />
+          <br />
+          Également passioné de musique, je sais faire preuve de créativité et
+          d'innovation.
+        </div>
+        <button
+          id="aboutBtn"
+          class="hoverBtn js-scroll-trigger"
+          onclick="window.location.href='#contact'"
+        >
+          <p id="contactTxt">Me Contacter</p>
         </button>
-      </div>
-    </section>
+        <div class="aboutImg"></div>
 
-    <section id="about">
-      <div class="aboutTitle">
-        À PROPOS
-      </div>
-      <div class="aboutText">
-        Je suis un développeur Web et Mobile basé sur Nantes.
-        <br>
-        <br>
-        En constante auto-formation, apprendre de nouvelles technologies et de nouvelles façons de travailler fait
-        partie
-        intégrante de mon éthique profesionnelle.
-        <br>
-        <br>
-        Également passioné de musique, je sais faire preuve de créativité et d'innovation.
-
-      </div>
-      <button id="aboutBtn" class="hoverBtn js-scroll-trigger" onclick="window.location.href='#contact'">
-        <p id="contactTxt">Me Contacter</p>
-      </button>
-      <div class="aboutImg"></div>
-
-      <!-- <div class="aboutCards">
+        <!-- <div class="aboutCards">
         <div class="aboutCard"> </div>
         <div class="aboutCard"> </div><div class="aboutCard"> </div>
         <div class="aboutCard"> </div>
       </div> -->
 
-      <div class="blackStripeL"></div>
-      <div class="blackStripeR"></div>
+        <div class="blackStripeL"></div>
+        <div class="blackStripeR"></div>
+      </section>
 
-    </section>
+      <section id="diplomas">
+        <div class="diplomaTitle">DIPLÔMES</div>
 
-    <section id="diplomas">
-      <div class="diplomaTitle">DIPLÔMES
-      </div>
+        <div class="diploma1">
+          <div class="lieu">LYCÉE DU PAYS DE RETZ</div>
+          <div class="date">2017 - Pornic 44210</div>
+          <hr />
+          <div class="diplomaName">BACCALAURÉAT SCIENTIFIQUE</div>
+        </div>
 
-      <div class="diploma1">
-        <div class="lieu">LYCÉE DU PAYS DE RETZ</div>
-        <div class="date">2017 - Pornic 44210</div>
-        <hr>
-        <div class="diplomaName">BACCALAURÉAT SCIENTIFIQUE</div>
+        <div class="diploma2">
+          <div class="lieu">LYCÉE POLYVALENT CHEVROLLIER</div>
+          <div class="date">2019 - Angers 49000</div>
+          <hr />
+          <div class="diplomaName">
+            BTS SERVICE INFORMATIQUE AUX ORGANISATIONS OPTION SOLUTION
+            LOGICIELLE ET APPLICATIONS MÉTIER
+          </div>
+        </div>
 
-      </div>
+        <div class="diplomaImg"></div>
 
-      <div class="diploma2">
-        <div class="lieu">LYCÉE POLYVALENT CHEVROLLIER</div>
-        <div class="date">2019 - Angers 49000</div>
-        <hr>
-        <div class="diplomaName">BTS SERVICE INFORMATIQUE AUX ORGANISATIONS OPTION SOLUTION LOGICIELLE ET APPLICATIONS
-          MÉTIER</div>
-      </div>
+        <div class="whiteStripeL"></div>
+        <div class="whiteStripeR"></div>
+      </section>
 
-      <div class="diplomaImg"></div>
+      <section id="experiences">
+        <div class="blog-slider">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">2018 - 7 semaines</span>
+                <div class="blog-slider__title">STAGE 1ÈRE ANNÉE DE BTS SIO</div>
+                <div class="blog-slider__text">- Adaptation de plugin pour le logiciel GLPI <br>
+                  - Mise en place du logiciel GRR (Gestion et Réservation de Ressources) <br>
+                  - Maquettage d’un projet Intranet? </div>
+                  <div class="blog-slider__lieu">COMMNAUTÉ DE COMMUNES SUD ESTUAIRE - 44560 PAIMBOEUF</div>
+                <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
+              </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code"> 2019 - 7 semaines</span>
+                <div class="blog-slider__title">STAGE 2ÈME ANNÉE DE BTS SIO</div>
+                <div class="blog-slider__text">- Développement d’une application de gestion de projet / suivi de feedback sous plateforme Laravel
 
-      <div class="whiteStripeL"></div>
-      <div class="whiteStripeR"></div>
-
-    </section>
-
-    <section id="skills">
-
-    </section>
-  </div>
-  <script src="/script/app.js" async defer></script>
-</body>
-
+                </div>
+                <div class="blog-slider__lieu">MORGANVIEW - 49000 Angers</div>
+              </div>
+            </div>      
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+              </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">26 December 2019</span>
+                <div class="blog-slider__title">test 3</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="blog-slider__pagination"></div>
+        </div>
+      </section>
+    </div>
+    <script src="/script/app.js" async defer></script>
+  </body>
 </html>

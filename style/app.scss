@@ -8,7 +8,6 @@ html {
 }
 
 body {
-
   font-family: "Montserrat";
   margin: 0;
   padding: 0;
@@ -61,8 +60,7 @@ body {
 }
 
 .whiteNav {
-
-  background: #F3F3F3;
+  background: #f3f3f3;
 
   .logo {
     color: $nav;
@@ -72,7 +70,6 @@ body {
     color: $nav;
   }
 }
-
 
 // Section hero
 #hero {
@@ -94,14 +91,14 @@ body {
   justify-self: center;
   display: inlie-grid;
   cursor: pointer;
-  outline:none;
+  outline: none;
   &:hover {
     background-color: $nav;
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.2s;
 
     #more {
       color: white;
-      transition: ease-in .2s;
+      transition: ease-in 0.2s;
     }
   }
 }
@@ -143,15 +140,14 @@ body {
   }
 }
 
-
 // section about
 
 #about {
   height: 100vh;
   display: grid;
   grid-template-columns: 5% 35% 10% 35% 10% 5%;
-  grid-template-rows: 15% 5% 30% 30% 15% 12%;
-  background: #F3F3F3;
+  grid-template-rows: 15% 5% 30% 17% 5% 8% 15% 12%;
+  background: #f3f3f3;
   scroll-snap-align: start;
 }
 
@@ -183,23 +179,23 @@ body {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 6;
+  grid-row-end: 8;
 }
 
 .blackStripeL {
   background: $nav;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
 
 .blackStripeR {
   background: $nav;
   grid-column-start: 6;
   grid-column-end: 7;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
 
 .aboutTitle {
@@ -224,7 +220,7 @@ body {
 #aboutBtn {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 4;
+  grid-row-start: 6;
   grid-row-end: 5;
   background-color: $nav;
   border-radius: 25px;
@@ -235,20 +231,20 @@ body {
   justify-self: left;
   display: inlie-grid;
   cursor: pointer;
-  outline:none;
+  outline: none;
   &:hover {
     background-color: $nav;
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.2s;
 
     #contactTxt {
       color: #f3f3f3;
-      transition: ease-in .2s;
+      transition: ease-in 0.2s;
     }
   }
 }
 
-#contactTxt{
-  color: #FFF;
+#contactTxt {
+  color: #fff;
 }
 
 // section diploma
@@ -261,7 +257,6 @@ body {
   display: grid;
   grid-template-columns: 5% 5% 30% 10% 45% 5%;
   grid-template-rows: 15% 5% 25% 38% 12% 5%;
-
 }
 
 .diplomaTitle {
@@ -316,7 +311,7 @@ body {
 }
 
 .whiteStripeL {
-  background: #F3F3F3;
+  background: #f3f3f3;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
@@ -324,20 +319,48 @@ body {
 }
 
 .whiteStripeR {
-  background: #F3F3F3;
+  background: #f3f3f3;
   grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 5;
   grid-row-end: 6;
 }
 
-
 // section skills
 
-#skills {
+#experiences {
   height: 100vh;
-  display: grid;
-  background: #F3F3F3;
-  grid-template-columns: 5% 35% 10% 35% 10% 5%;
-  grid-template-rows: 15% 5% 45% 15% 12% auto;
+  // display: grid;
+  display: flex;
+  background: #f3f3f3;
+  * {
+    box-sizing: border-box;
+  }
+  //   grid-template-columns: 5% 90% 1% 20%;
+  //   grid-template-rows: 15% 5% 45% 15% 12% auto;
 }
+
+#experiencesTitle {
+  font-size: 35pt;
+  font-weight: bold;
+  // grid-column-start: 2;
+  // grid-column-end: 3;
+  // grid-row-start: 2;
+  // grid-row-end: 3;
+}
+
+// .blackStripeRightTop{
+//   background-color: $nav;
+//   grid-column-start: 3;
+//   grid-column-end: 4;
+//   grid-row-start: 1;
+//   grid-row-end: 2;
+// }
+
+// .blackStripeRightBottom{
+//   background-color: $nav;
+//   grid-column-start: 3;
+//   grid-column-end: 4;
+//   grid-row-start: 3;
+//   grid-row-end: 7;
+// }
