@@ -26,7 +26,7 @@ body {
   display: inline-grid;
   position: fixed;
   transition: all 0.5s ease-in-out;
-
+z-index: 10;
   .logo {
     cursor: pointer;
     color: white;
@@ -377,18 +377,36 @@ body {
   grid-row-end: 6;
 }
 
-// .blackStripeRightTop{
-//   background-color: $nav;
-//   grid-column-start: 3;
-//   grid-column-end: 4;
-//   grid-row-start: 1;
-//   grid-row-end: 2;
-// }
+#skills{
+  height: 100vh;
+  display: grid;
+  background-color: $nav;
+  grid-template-columns: 5%  90% auto;
+  grid-template-rows: 15% 7%  45% 15% 15% auto;
+}
 
-// .blackStripeRightBottom{
-//   background-color: $nav;
-//   grid-column-start: 3;
-//   grid-column-end: 4;
-//   grid-row-start: 3;
-//   grid-row-end: 7;
-// }
+.skillscontainer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+ 
+}
+
+.news-slider__pagination{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+ 
+}
+
+.skillsTitle {
+  font-size: 35pt;
+  color: #f3f3f3;
+  font-weight: bold;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
