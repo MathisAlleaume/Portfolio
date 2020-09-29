@@ -87,11 +87,13 @@ a:hover {
   pointer-events: none;
   -webkit-transition: all .3s;
   transition: all .3s;
+  width: 0px;
 }
 
 .news-slider__item.swiper-slide-active, .news-slider__item.swiper-slide-prev, .news-slider__item.swiper-slide-next {
   opacity: 1;
   pointer-events: auto;
+  width: 320px;
 }
 
 .news-slider__ctr {

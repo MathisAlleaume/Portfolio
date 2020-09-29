@@ -9,6 +9,8 @@
 //   font-family: 'Quicksand', sans-serif;
 // }
 
+
+
 a,
 a:hover {
     text-decoration: none;
@@ -88,6 +90,7 @@ a:hover {
                 opacity: 0;
                 pointer-events: none;
                 transition: all .3s;
+                width:0px;
             }
 
             &.swiper-slide-active,
@@ -95,6 +98,7 @@ a:hover {
             &.swiper-slide-next {
                 opacity: 1;
                 pointer-events: auto;
+                width: 320px;
             }
 
 

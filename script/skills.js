@@ -41,7 +41,8 @@ if($(window).width() > 800) {
 var skillswiper = new Swiper('.news-slider', {
     effect: 'coverflow',
     grabCursor: true,
-    loop: true,
+    // loop: true,
+    // loopFillGroupWithBlank: false,
     centeredSlides: true,
     keyboard: true,
     spaceBetween: 0,
