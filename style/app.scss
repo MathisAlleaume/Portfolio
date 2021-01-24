@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
 
 $nav: #312e2e;
+$navlight: #525151;
 
 
 
@@ -1349,16 +1350,16 @@ $nav: #312e2e;
     background: #f3f3f3;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 9;
   }
 
   .whiteStripeRSkills {
     background: #f3f3f3;
     grid-column-start: 5;
     grid-column-end: 7;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 9;
   }
 
   #skills {
@@ -1366,7 +1367,12 @@ $nav: #312e2e;
     display: grid;
     background-color: $nav;
     grid-template-columns: 5% 5% 30% 10% 45% 5%;
-    grid-template-rows: 15% 5% 63% 12% 5%;
+    grid-template-rows: 15% 5% 6% 15% 12% 15% 15% 12% 5%;
+    color: #fff;
+
+    .categorie{
+      font-size: 25pt;
+    }
   }
 
   .skillscontainer {
@@ -1405,8 +1411,79 @@ $nav: #312e2e;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
+    grid-row-end: 9;
+  }
+
+  .webSkills{
+    margin-top: 25px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
     grid-row-end: 5;
   }
 
+  .mobileSkills{
+    margin-top: 45px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
 
+  .frameworkSkills{
+    margin-top: 45px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  .othersSkills{
+    margin-top: 45px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+}
+  .dev-icons{
+    margin-top: 45px;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  // Lists
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.dev-icons {
+  margin-top: 30px;
+  grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  font-size: 3rem;
+  padding-left: 0px;
+  .list-inline-item i {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+
+ul {
+  color: $navlight;
+  list-style-type: none;
+  li{
+    display:inline-block;
+  }
+}
+  
+
+
+
+.swiper-container-autoheight{
+  height: fit-content;
 }

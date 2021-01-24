@@ -1,142 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Mathis ALLEAUME</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style/slider.css" />
-    <link rel="stylesheet" href="/style/contact.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/style/skills.css" />
-    <link rel="stylesheet" href="/style/app.css" />
-    <script src="/script/jquery-3.5.0.min.js"></script>
-    <script src="/script/swiper.min.js"></script>
-  </head>
 
-  <body>
-    <div class="nav" id="topNav">
-      <div class="logo" onclick="location.href='#hero'">MA</div>
-      <div class="links">
-        <a href="#about" class="topLink js-scroll-trigger">A PROPOS</a>
-        <a href="#diplomas  " class="topLink">DIPLOMES</a>
-        <a href="#experiences" class="topLink">EXPERIENCES</a>
-        <a href="#skills" class="topLink">COMPETENCES</a>
-        <a href="#contact" class="topLink">CONTACT</a>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mathis ALLEAUME</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style/bootstrap.min.css" />
+  <link rel="stylesheet" href="/style/slider.css" />
+  <link rel="stylesheet" href="/style/contact.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/style/skills.css" />
+  <link rel="stylesheet" href="/style/app.css" />
+  <link href="/font-awesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <script src="/script/jquery-3.5.0.min.js"></script>
+  <script src="/script/swiper.min.js"></script>
+</head>
+
+<body>
+  <div class="nav" id="topNav">
+    <div class="logo" onclick="location.href='#hero'">MA</div>
+    <div class="links">
+      <a href="#about" class="topLink js-scroll-trigger">A PROPOS</a>
+      <a href="#diplomas  " class="topLink">DIPLOMES</a>
+      <a href="#experiences" class="topLink">EXPERIENCES</a>
+      <a href="#skills" class="topLink">COMPETENCES</a>
+      <a href="#contact" class="topLink">CONTACT</a>
     </div>
+  </div>
 
-    <div class="sections">
-      <section id="hero">
-        <div class="intro">
-          <div class="mathis">MATHIS ALLEAUME</div>
-          <div id="dev">Developpeur web & mobile</div>
-          <button
-            id="moreBtn"
-            class="hoverBtn js-scroll-trigger"
-            onclick="window.location.href='#about'"
-          >
-            <p id="more">Voir Plus</p>
-          </button>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="aboutTitle">À PROPOS</div>
-        <div class="aboutText">
-          Je suis un développeur Web et Mobile basé sur Nantes.
-          <br />
-          <br />
-          En constante auto-formation, apprendre de nouvelles technologies et de
-          nouvelles façons de travailler fait partie intégrante de mon éthique
-          profesionnelle.
-          <br />
-          <br />
-          Également passioné de musique, je sais faire preuve de créativité et
-          d'innovation.
-        </div>
-        <button
-          id="aboutBtn"
-          class="hoverBtn js-scroll-trigger"
-          onclick="window.location.href='#contact'"
-        >
-          <p id="contactTxt">Me Contacter</p>
+  <div class="sections">
+    <section id="hero">
+      <div class="intro">
+        <div class="mathis">MATHIS ALLEAUME</div>
+        <div id="dev">Developpeur web & mobile</div>
+        <button id="moreBtn" class="hoverBtn js-scroll-trigger" onclick="window.location.href='#about'">
+          <p id="more">Voir Plus</p>
         </button>
-        <div class="aboutImg"></div>
+      </div>
+    </section>
 
-        <!-- <div class="aboutCards">
+    <section id="about">
+      <div class="aboutTitle">À PROPOS</div>
+      <div class="aboutText">
+        Je suis un développeur Web et Mobile basé sur Nantes.
+        <br />
+        <br />
+        En constante auto-formation, apprendre de nouvelles technologies et de
+        nouvelles façons de travailler fait partie intégrante de mon éthique
+        profesionnelle.
+        <br />
+        <br />
+        Également passioné de musique, je sais faire preuve de créativité et
+        d'innovation.
+      </div>
+      <button id="aboutBtn" class="hoverBtn js-scroll-trigger" onclick="window.location.href='#contact'">
+        <p id="contactTxt">Me Contacter</p>
+      </button>
+      <div class="aboutImg"></div>
+
+      <!-- <div class="aboutCards">
         <div class="aboutCard"> </div>
         <div class="aboutCard"> </div><div class="aboutCard"> </div>
         <div class="aboutCard"> </div>
       </div> -->
 
-        <div class="blackStripeL"></div>
-        <div class="blackStripeR"></div>
-      </section>
+      <div class="blackStripeL"></div>
+      <div class="blackStripeR"></div>
+    </section>
 
-      <section id="diplomas">
-        <div class="diplomaTitle">DIPLÔMES</div>
+    <section id="diplomas">
+      <div class="diplomaTitle">DIPLÔMES</div>
 
-        <div class="diploma1">
-          <div class="lieu">LYCÉE DU PAYS DE RETZ</div>
-          <div class="date">2017 - Pornic 44210</div>
-          <hr />
-          <div class="diplomaName">BACCALAURÉAT SCIENTIFIQUE</div>
+      <div class="diploma1">
+        <div class="lieu">LYCÉE DU PAYS DE RETZ</div>
+        <div class="date">2017 - Pornic 44210</div>
+        <hr />
+        <div class="diplomaName">BACCALAURÉAT SCIENTIFIQUE</div>
+      </div>
+
+      <div class="diploma2">
+        <div class="lieu">LYCÉE POLYVALENT CHEVROLLIER</div>
+        <div class="date">2019 - Angers 49000</div>
+        <hr />
+        <div class="diplomaName">
+          BTS SERVICE INFORMATIQUE AUX ORGANISATIONS OPTION SOLUTION
+          LOGICIELLE ET APPLICATIONS MÉTIER
         </div>
+      </div>
 
-        <div class="diploma2">
-          <div class="lieu">LYCÉE POLYVALENT CHEVROLLIER</div>
-          <div class="date">2019 - Angers 49000</div>
-          <hr />
-          <div class="diplomaName">
-            BTS SERVICE INFORMATIQUE AUX ORGANISATIONS OPTION SOLUTION
-            LOGICIELLE ET APPLICATIONS MÉTIER
-          </div>
-        </div>
+      <div class="diplomaImg"></div>
 
-        <div class="diplomaImg"></div>
+      <div class="whiteStripeL"></div>
+      <div class="whiteStripeR"></div>
+    </section>
 
-        <div class="whiteStripeL"></div>
-        <div class="whiteStripeR"></div>
-      </section>
-
-      <section id="experiences">
-        <div class="experiencesTitle">EXPERIENCES</div>
-        <div class="blog-slider">
-          <div class="blog-slider__wrp swiper-wrapper">
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img style="padding: 10%" src="/imgs/ccse.png" alt="" />
+    <section id="experiences">
+      <div class="experiencesTitle">EXPERIENCES</div>
+      <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img style="padding: 10%" src="/imgs/ccse.png" alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">2018 - 7 semaines</span>
+              <div class="blog-slider__title">
+                STAGE 1ÈRE ANNÉE DE BTS SIO
               </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">2018 - 7 semaines</span>
-                <div class="blog-slider__title">
-                  STAGE 1ÈRE ANNÉE DE BTS SIO
-                </div>
-                <div class="blog-slider__text">
-                  - Adaptation de plugin pour le logiciel GLPI <br />
-                  - Mise en place du logiciel GRR (Gestion et Réservation de
-                  Ressources) <br />
-                  - Maquettage d’un projet Intranet
-                </div>
-                <div class="blog-slider__lieu">
-                  COMMNAUTÉ DE COMMUNES SUD ESTUAIRE - 44560 PAIMBOEUF
-                </div>
-                <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
+              <div class="blog-slider__text">
+                - Adaptation de plugin pour le logiciel GLPI <br />
+                - Mise en place du logiciel GRR (Gestion et Réservation de
+                Ressources) <br />
+                - Maquettage d’un projet Intranet
+              </div>
+              <div class="blog-slider__lieu">
+                COMMNAUTÉ DE COMMUNES SUD ESTUAIRE - 44560 PAIMBOEUF
               </div>
             </div>
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img" style="padding: 10%">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 742 742">
-                  <path
-                    fill="#ffffff"
-                    stroke="#ffffff"
-                    stroke-width="1"
-                    d="M 521.99,411.53
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img" style="padding: 10%">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 742 742">
+                <path fill="#ffffff" stroke="#ffffff" stroke-width="1" d="M 521.99,411.53
                     C 521.99,411.53 594.56,411.53 594.56,411.53
                         594.56,411.53 532.18,6.10 532.18,6.10
                         532.18,6.10 371.05,242.60 371.05,242.60
@@ -153,152 +140,155 @@
                         493.70,329.87 463.61,329.87 463.61,329.87
                         463.61,329.87 371.05,541.78 371.05,541.78
                         371.05,541.78 278.49,329.87 278.49,329.87
-                        278.49,329.87 248.30,329.87 248.30,329.87 Z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code"> 2019 - 7 semaines</span>
-                <div class="blog-slider__title">
-                  STAGE 2ÈME ANNÉE DE BTS SIO
-                </div>
-                <div class="blog-slider__text">
-                  - Développement d’une application de gestion de projet / suivi
-                  de feedback sous plateforme Laravel
-                </div>
-                <div class="blog-slider__lieu">MORGANVIEW - 49000 Angers</div>
-              </div>
+                        278.49,329.87 248.30,329.87 248.30,329.87 Z"></path>
+              </svg>
             </div>
-            <div class="blog-slider__item swiper-slide">
-              <div class="blog-slider__img">
-                <img
-                  style="padding: 10%; height: 90%; margin-top: 5%"
-                  src="/imgs/syn.png"
-                  alt=""
-                />
+            <div class="blog-slider__content">
+              <span class="blog-slider__code"> 2019 - 7 semaines</span>
+              <div class="blog-slider__title">
+                STAGE 2ÈME ANNÉE DE BTS SIO
               </div>
-              <div class="blog-slider__content">
-                <span class="blog-slider__code">Août 2019 - Aujourd'hui</span>
-                <div class="blog-slider__title">
-                  CONSULTANT TECHNIQUE WEB - SAP UI5
-                </div>
-                <div class="blog-slider__text">
-                  - Création, modification et extenssion d'applications WEB sous
-                  framework JavaScript SAP UI5
-                </div>
-                <div class="blog-slider__lieu">
-                  Groupe Synvance - 44000 Nantes
-                </div>
+              <div class="blog-slider__text">
+                - Développement d’une application de gestion de projet / suivi
+                de feedback avec hebergement de vidéo avec le framework Laravel
               </div>
+              <div class="blog-slider__lieu">MORGANVIEW - 49000 Angers</div>
             </div>
           </div>
-          <div class="blog-slider__pagination"></div>
-        </div>
-
-        <div class="expImg"></div>
-        <div class="blackStripeLExp"></div>
-        <div class="blackStripeRExp"></div>
-      </section>
-
-      <section id="skills">
-        <div class="skillsTitle">COMPETENCES</div>
-
-        <div class="skillscontainer">
-          <div class="options">
-            <div
-              class="option active"
-              style="
-                --optionBackground: url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);
-              "
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon"></div>
-                <div class="info">
-                  <div class="main">WEB</div>
-                  <div class="sub">PHP, <br />HTML5, <br />Javascript (AJAX, JQuery), <br />CSS3
-                  </div>
-                </div>
-              </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img style="padding: 10%; height: 90%; margin-top: 5%" src="/imgs/syn.png" alt="" />
             </div>
-            <div
-              class="option"
-              style="
-                --optionBackground: url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);
-              "
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon"></div>
-                <div class="info">
-                  <div class="main">Framework</div>
-                  <!-- <div class="sub">Mobiles, Front-End, Back-End</div> -->
-                </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">Août 2019 - Aujourd'hui</span>
+              <div class="blog-slider__title">
+                CONSULTANT TECHNIQUE WEB - SAP UI5
               </div>
-            </div>
-            <div
-              class="option"
-              style="
-                --optionBackground: url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);
-              "
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-tree"></i>
-                </div>
-                <div class="info">
-                  <div class="main">CMS</div>
-                  <div class="sub">Omuke trughte a otufta</div>
-                </div>
+              <div class="blog-slider__text">
+                - Création, modification et extension d'applications WEB avec le
+                framework JavaScript SAP UI5. <br>
+                - Création de web services oData pour des applications WEB SAPUI5. <br>
+                - Développement d'un site web catalogue d'application SAPUI5 avec Laravel et Vue JS.
               </div>
-            </div>
-            <div
-              class="option"
-              style="
-                --optionBackground: url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);
-              "
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-tint"></i>
-                </div>
-                <div class="info">
-                  <div class="main">Idiefe</div>
-                  <div class="sub">
-                    <ul>
-                      <li>test</li>
-                      <li>test</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="option"
-              style="
-                --optionBackground: url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);
-              "
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-sun"></i>
-                </div>
-                <div class="info">
-                  <div class="main">Inatethi</div>
-                  <div class="sub">Omuke trughte a otufta</div>
-                </div>
+              <div class="blog-slider__lieu">
+                Groupe Synvance - 44000 Nantes
               </div>
             </div>
           </div>
         </div>
-        <div class="skillsImg"></div>
-        <div class="whiteStripeLSkills"></div>
-        <div class="whiteStripeRSkills"></div>
-      </section>
-      <!-- <section id="contact">
+        <div class="blog-slider__pagination"></div>
+      </div>
+
+      <div class="expImg"></div>
+      <div class="blackStripeLExp"></div>
+      <div class="blackStripeRExp"></div>
+    </section>
+
+    <section id="skills">
+      <div class="skillsTitle">COMPETENCES</div>
+
+      <div class="webSkills">
+        <div class="categorie">WEB</div>
+
+        <hr />
+        <div class="skillsList">
+          - PHP,
+          <br> - HTML5,
+          <br> - Javascript (AJAX, JQuery),
+          <br> - CSS3.
+          <br> - CMS : Joomla!, Wordpress(connaissances de bases)
+        </div>
+      </div>
+
+      <div class="mobileSkills">
+        <div class="categorie">Mobile</div>
+
+        <hr />
+        <div class="skillsList">
+          - Java / Kotlin <br>
+          - Swift (bases / auto-formation) <br>
+          - Cordova (bases).
+
+        </div>
+      </div>
+
+      <div class="frameworkSkills">
+        <div class="categorie">Frameworks</div>
+
+        <hr />
+        <div class="skillsList">
+          - Laravel,<br>
+          - Retrofit,<br>
+          - VueJS,<br>
+          - Symfony,<br>
+          - ReactJS,<br>
+          - SAP UI5.
+        </div>
+      </div>
+
+      <div class="othersSkills">
+        <div class="categorie">Autres</div>
+
+        <hr />
+        <div class="skillsList">
+          - Distribution Linux utilisées : Debian, Ubuntu, CentOs/RedHat <br>
+          - Langages Exploitation de base de données : SQL, SQL Server (bases) <br>
+          - Anglais écrit : courant / Anglais oral : Bon niveau <br>
+          - Langages Exploitation de base de données : SQL, SQL Server (bases) <br>
+          - Travail en méthode Agile <br>
+          - Bonne maîtrise de Git
+
+        </div>
+      </div>
+
+
+      <ul class="list-inline dev-icons">
+        <li class="list-inline-item">
+          <i class="fab fa-html5"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-css3-alt"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-js-square"></i>
+        </li>
+
+        <li class="list-inline-item">
+          <i class="fab fa-node-js"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-npm"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-laravel"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-java"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-android"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-apple"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-sass"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-linux"></i>
+        </li>
+        <li class="list-inline-item">
+          <i class="fab fa-vuejs"></i>
+        </li>
+
+
+      </ul>
+
+      <div class="skillsImg"></div>
+      <div class="whiteStripeLSkills"></div>
+      <div class="whiteStripeRSkills"></div>
+    </section>
+    <!-- <section id="contact">
         <section class="get-in-touch">
           <h1 class="title">Get in touch</h1>
           <form class="contact-form row">
@@ -335,12 +325,12 @@
           </form>
         </section>
       </section> -->
-      <footer>
-        <div class="topLine"></div>
-        <div class="footerLogo">ma</div>
-      </footer>
-    </div>
-    <script src="/script/app.js" async defer></script>
-    <script src="/script/skills.js" async defer></script>
-  </body>
+    <footer>
+      <div class="topLine"></div>
+      <div class="footerLogo">ma</div>
+    </footer>
+  </div>
+  <script src="/script/app.js" async defer></script>
+</body>
+
 </html>
